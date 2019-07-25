@@ -1,0 +1,15 @@
+div.comment {
+    @extend .card, .shadow-sm, .border-0, .mb-3;
+    
+    .comment-header {
+        @extend .card-header, .bg-transparent, .border-0, .small;
+    }
+
+    .comment-body {
+        @extend .card-body, .py-0;
+    }
+
+    .comment-options {
+        @extend .card-footer, .bg-transparent, .border-0, .d-flex, .align-items-center;
+    }
+}

@@ -1,0 +1,40 @@
+main article {
+    @extend .card, .border-0;
+    
+    div.article-header, header {
+        @extend .card-body, .small;
+
+        .header-options {
+            @extend .d-flex, .flex-sm-row, .flex-column, .mb-2;
+        }
+    }
+    
+    .article-body {
+        @extend .card-body, .py-0;
+
+        p:last-child {
+            @extend .mb-0;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @extend .mt-5, .mb-3;
+        }
+
+        img {
+            @extend .mb-3;
+            max-width: 100%;
+        }
+    }
+
+    .article-options {
+        @extend .card-footer, .bg-transparent, .border-0, .d-flex, .align-items-center
+    }
+}
+
+video {
+    width: 100%
+}

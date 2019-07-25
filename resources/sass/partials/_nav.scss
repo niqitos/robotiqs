@@ -1,0 +1,68 @@
+button:focus {
+    outline:none
+};
+
+.shadow-md {
+    box-shadow:0 .25rem .5rem rgba(0,0,0,.075)!important;
+}
+
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	display: block;
+	transition: all 0.2s;
+    &:not(.top-bar){
+        margin-top: 4px;
+    }
+}
+
+.navbar-brand {
+    @extend .mr-2;
+}
+ 
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    & .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+    & .middle-bar {
+        opacity: 0;
+    }
+    & .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+    &.collapsed {
+        & .top-bar {
+            transform: rotate(0);
+        }
+        & .middle-bar {
+            opacity: 1;
+        }
+        & .bottom-bar {
+            transform: rotate(0);
+        }
+    }
+}
+
+.write {
+    @extend .text-decoration-none, .border, .rounded, .mr-3, .mr-sm-4;
+    padding: 2px 8px!important;
+}
+
+nav.navbar {
+    padding: 0.125rem 1rem;
+    .nav-item.active {
+        border-top: 0.25rem solid;
+        margin-top: -0.25rem;
+    }
+    .custom-control-label {
+        cursor: pointer;
+    }
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}

@@ -1,0 +1,11 @@
+div.like {
+    @extend .border-0, .mb-3;
+    
+    .like-header {
+        @extend .card-header, .bg-transparent, .border-0, .px-0, .py-1, .small;
+    }
+
+    .like-body {
+        @extend .card-body, .p-0;
+    }
+}

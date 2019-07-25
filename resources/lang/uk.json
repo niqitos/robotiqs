@@ -1,0 +1,72 @@
+{
+    "Night" : "Ніч",
+
+    "Login"       : "Вхід",
+    "Log In"      : "Увійти",
+    "Logout"      : "Вихід",
+    "Log Out"     : "Вийти",
+    "Remember Me" : "Запам'ятати",
+
+    "Name"                    : "Ім'я",
+    "Username"                : "Ім'я користувача",
+    "Email"                   : "Ел. пошта",
+    "Email or Username"       : "Ел. пошта чи ім'я користувача",
+    "Password"                : "Пароль",
+    "Confirm Password"        : "Підтвердіть пароль",
+    "Don't have account yet?" : "Вперше у нас?",
+    "Register"                : "Зареєструватися",
+    "Registration"            : "Реєстрація",
+    "Verification"            : "Верифікація",
+
+    "Forgot Password?"            : "Забули пароль?",
+    "Password Reset"              : "Відновлення паролю",
+    "Password Reset Confirmation" : "Підтвердження відновлення пароля",
+    "Send Password Reset Link"    : "Надіслати посилання",
+
+    "Topic" : "Тема",
+
+    "Whoops!" : "Халепа!",
+    "Hello!"  : "Вітаємо!",
+    "Reset Password Notification" : "Сповіщення про відновлення паролю",
+    "You are receiving this email because we received a password reset request for your account." : "Ви отримали це повідомлення, оскільки ми отримали запит на зміну пароля для вашого облікового запису.",
+    "Reset Password" : "Змінити пароль",
+    "This password reset link will expire in :count minutes." : "Ця посилання для відновленни паролю працює протягом :count хвилин.",
+    "If you did not request a password reset, no further action is required." : "Якщо ви не подавали запит на зміну паролю, ігноруйте це повідомлення.",
+    "Regards" : "З повагою",
+
+    "Popular"    : "Популярні",
+    "Today"      : "За день",
+    "This Week"  : "За тиждень",
+    "This Month" : "За місяць",
+    "This Year"  : "За рік",
+    "All Time"   : "За весь час",
+    "Latest"     : "Свіжі",
+    "Write"      : "Написати",
+    "Profile"    : "Профіль",
+
+    "Publish"    : "Опублікувати",
+
+    "Write an article" : "✍️ Написати статтю",
+
+    "Title"      : "Заголовок",
+    "Details..." : "Текст статті...",
+
+    "All Rights Reserved" : "Всі права зберігаються",
+
+    "OR"           : "АБО",
+
+    "Articles" : "Запитання",
+    "Comments"   : "Відповіді",
+    "Likes"     : "Сподобалось",
+    "Delete"    : "Видалити",
+
+    "Terms of Service" : "Умови Користування",
+    "Privacy Policy"   : "Конфіденційність",
+
+    "This website uses cookies." : "Цей веб сайт використовує cookie.",
+    "Read more"                  : "Детальніше",
+    "Accept"                     : "Прийняти",
+
+    "404" : "404 | сторінку не знайдено",
+    "Not Found" : "За цією адресою нічого немає"
+}

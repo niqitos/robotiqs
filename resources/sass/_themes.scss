@@ -1,0 +1,305 @@
+#app.light {
+    @extend .text-dark, .bg-light;
+    
+    nav.navbar {
+        @extend .bg-white;
+
+        .icon-bar {
+            @extend .bg-dark;
+        }
+        .nav-item.dropdown {
+            .dropdown-menu {
+                @extend .bg-white;
+
+                .dropdown-item {
+                    @extend .text-dark, .bg-white;
+
+                    &:hover, 
+                    &:focus {
+                        background-color: $gray-100!important;
+                    }
+                    &.theme {
+                        background-color: transparent !important;
+                        label {
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .write {
+            @extend .border-dark;
+        }
+        .nav-item.active {
+            @extend .border-dark;
+        }
+    }
+    .card {
+        @extend .text-dark, .bg-white;
+    }
+    .topic {
+        @extend .border-dark;
+    }
+    svg:not(#logo) path {
+        fill: $dark;
+    }
+    nav, .article-header, header, div.comment {
+        a, a:hover {
+            @extend .text-dark;
+        }
+    }
+    main {
+        @extend .bg-light;
+
+        article {
+            &.show,
+            &.create {
+                @extend .bg-transparent;
+            }
+            .article-options {
+                a:not(.text-danger):not(.text-muted):not(.btn-primary):not(.close),
+                button:not(.text-danger):not(.text-muted):not(.btn-primary):not(.close) {
+                    @extend .text-dark;
+                }
+            }
+        }
+        article:not(.show):not(.create) {
+            @extend .bg-white;
+        }
+
+        .nav-tabs {
+            @extend .border-white;
+        }
+        .nav-tabs a.nav-link {
+            @extend .text-dark, .border-0;
+
+            &.active {
+                @extend .text-dark, .bg-white;
+            }
+        }
+
+        .sidebar-sticky .nav .nav-item .nav-link.active {
+            @extend .bg-white, .shadow-sm;
+        }
+    }
+    div.comment {
+        @extend .bg-white;
+    }
+    div:not(.alert), p, h1, h2, h3, h4, h5, h6 {
+        @extend .text-dark;
+    }
+    button:not(.text-danger):not(.text-muted):not(.btn-primary):not(.close) {
+        @extend .text-dark, .border-dark;
+    }
+    textarea, 
+    input, 
+    select {
+        @extend .text-dark, .bg-white;
+    }
+
+    .tag,
+    .tag:hover {
+        @extend .text-dark;
+    }
+
+    .vs__dropdown-menu {
+        @extend .bg-white;
+
+        li {
+            @extend .text-dark;
+        }
+    }
+
+    .hr-text {
+        &:before {
+            background: linear-gradient(to right, transparent, $gray-800, transparent);
+        }
+        &:after {
+            @extend .text-dark, .bg-white;
+        }
+    }
+
+    .cookie-consent {
+        @extend .bg-white;
+    }
+
+    pre {
+        @extend .text-dark;
+    }
+
+    footer a {
+        @extend .text-dark;
+    }
+}
+
+#app.dark {
+    @extend .text-white;
+
+    background-color: $gray-900!important;
+
+    nav.navbar {
+        @extend .bg-dark;
+
+        .icon-bar {
+            @extend .bg-white;
+        }
+        .nav-item.dropdown {
+            .dropdown-menu {
+                @extend .bg-dark;
+                .dropdown-item {
+                    @extend .text-white, .bg-dark;
+
+                    &:hover, 
+                    &:focus {
+                        background-color: $gray-900!important;
+                    }
+                    &.theme {
+                        background-color: transparent !important;
+                        label {
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .write {
+            @extend .border-white;
+        }
+        .nav-item.active {
+            @extend .border-white;
+        }
+    }
+    .card {
+        @extend .text-white, .bg-dark;
+    }
+    .topic {
+        @extend .border-white;
+    }
+    svg:not(#logo) path {
+        fill: $white;
+    }
+    a:hover {
+        color: lighten($link-color, 15%);;
+    }
+    nav, 
+    .article-header, 
+    header, 
+    div.comment {
+        a, a:hover {
+            @extend .text-white;
+        }
+    }
+    main {
+        background-color: $gray-900!important;
+
+        article {
+            &.show,
+            &.create {
+                @extend .bg-transparent;
+            }
+            .article-options {
+                a:not(.text-danger):not(.text-muted):not(.btn-primary):not(.close), 
+                button:not(.text-danger):not(.text-muted):not(.btn-primary):not(.close) {
+                    @extend .text-white;
+                }
+            }
+            &:not(.show):not(.create) {
+                @extend .bg-dark;
+            }
+        }
+
+        .nav-tabs {
+            @extend .border-dark;
+        }
+        .nav.nav-tabs a.nav-link {
+            @extend .text-white, .border-0;
+    
+            &.active {
+                @extend .text-white, .bg-dark;
+                &:hover {
+                    background-color:$gray-800!important;
+                }
+            }
+        }
+
+        .sidebar-sticky .nav .nav-item .nav-link.active {
+            @extend .bg-dark, .shadow-sm;
+        }
+    }
+    div.comment {
+        @extend .bg-dark;
+    }
+    button:not(.text-danger):not(.text-muted):not(.btn-primary):not(.close) {
+        @extend .text-white, .border-white;
+    }
+    div:not(.alert), p, h1, h2, h3, h4, h5, h6 {
+        @extend .text-white;
+    }
+    textarea,
+    input, 
+    select {
+        @extend .text-white, .bg-dark;
+    }
+
+    .tag,
+    .tag:hover {
+        @extend .text-white;
+    }
+
+    .vs__dropdown-menu {
+        @extend .bg-dark;
+
+        li {
+            @extend .text-white;
+        }
+    }
+
+    .hr-text {
+        &:before {
+            background: linear-gradient(to right, transparent, $gray-100, transparent);
+        }
+        &:after {
+            @extend .text-white, .bg-dark;
+        }
+    }
+
+    pre {
+        @extend .text-white;
+    }
+
+    footer a {
+        @extend .text-white;
+    }
+
+    .cookie-consent {
+        @extend .bg-dark;
+    }
+}
+
+#app input.vs__search {
+    background-color: transparent!important;
+    padding: 0;
+    color: $gray-600!important;
+}
+#app svg.vs__open-indicator path {
+    fill: $gray-600!important;
+}
+
+.vs--searchable .vs__dropdown-toggle {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.vs__selected-options {
+    padding: 0;
+}
+
+.vs__selected {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+.vs__actions {
+    padding: 0;
+}

@@ -1,0 +1,45 @@
+// Typography
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$nav-height: 46.625px;
+
+// Colors
+$blue:   #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink:   #f66d9b;
+$red:    #e3342f;
+$orange: #f6993f;
+// $yellow: #ffed4a;
+$yellow: #c7b614;
+$green:  #38c172;
+$teal:   #4dc0b5;
+$cyan:   #6cb2eb;
+
+// Brands
+$facebook-color: #3b5998;
+$google-color: #ea4335;
+$twitter-color: #1DA1F2;
+
+// Vue Cookie Consent
+$cookieconstent-padding: .5rem 0;
+
+.bg-indigo {
+    background-color: $indigo;
+}
+.bg-purple {
+    background-color: $purple;
+}
+.bg-purple {
+    background-color: $purple;
+}
+.bg-orange {
+    background-color: $orange;
+}
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-cyan {
+    background-color: $cyan;
+}

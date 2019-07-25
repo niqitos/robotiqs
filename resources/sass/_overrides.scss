@@ -1,0 +1,98 @@
+@include media-breakpoint-down(sm) {
+    body {
+        // font-size: .875rem;
+    }
+
+    h1,
+    .h1 {
+        font-size: 2rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.75rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.5rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1.25rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: 1rem;
+    }
+
+    h6,
+    .h6 {
+        font-size: .875rem;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+main {
+    min-height: calc(100vh - #{$nav-height});
+}
+
+.rounded {
+    border-radius: 2rem!important;
+}
+
+:focus {
+    outline: unset;
+}
+
+.dropdown-menu {
+    min-width: 7rem;
+}
+
+blockquote,
+.blockquote {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    border-left: 3px solid;
+}
+
+.nav-tabs a.nav-link.active {
+    box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+table.borderless tr {
+    @extend .border-0;
+}
+
+table {
+    @extend .mb-3;
+    width: 100%;
+
+    thead td {
+        @extend .font-weight-bold;
+    }
+
+    tr {
+        border-bottom: 1px dashed grey;
+    }
+
+    td {
+        @extend .py-2;
+    }
+    td:first-child {
+        @extend .pr-2, .pl-0;
+    }
+    td:not(:first-child):not(:last-child) {
+        @extend .px-2;
+    }
+    td:last-child {
+        @extend .pr-0, .pl-2;
+    }
+}

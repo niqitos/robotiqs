@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/vendor/FiraCode/distr/ttf/FiraCode-Regular.ttf') format('ttf'),
+         url('/fonts/vendor/FiraCode/distr/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url("/fonts/vendor/FiraCode/distr/woff/FiraCode-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+code,
+pre,
+kbd, 
+samp {
+    font-family: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+p, 
+li {
+    code {
+        @extend .shadow-sm;
+    
+        padding: .125rem .25rem;
+        border-radius: .25rem;
+    }
+}
+#app.light,
+#app.dark {
+    p, li {
+        code.hljs {
+            color: $indigo!important;
+        }
+    }
+}
+
+pre {
+    @extend .d-block, .overflow-auto, .p-0, .my-3, .shadow-sm;
+    
+    border-radius: .5rem;
+    border: .5rem solid;
+    position: relative;
+    max-height: 540px;
+
+    code.hljs {
+        word-break: break-all;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+button.copy {
+    @extend .border-0, .bg-transparent, .px-3;
+
+    font-size: 1rem;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#app.light {
+    pre {
+        @extend .border-white, .bg-white;
+    }
+
+    code.hljs {
+        @extend .text-dark, .bg-white;
+    }
+
+    button.copy {
+        @extend .text-dark;
+    }
+}
+
+#app.dark {
+    pre {
+        @extend .border-dark, .bg-dark;
+    }
+
+    code.hljs {
+        @extend .text-white, .bg-dark;
+    }
+
+    button.copy {
+        @extend .text-white;
+    }
+}
+
+#app.light,
+#app.dark {
+    .hljs-subst {
+        color: $gray-600;
+    }
+
+    .hljs-meta-string {
+        color: $orange;
+    }
+
+    .hljs-keyword,
+    .hljs-attribute,
+    .hljs-selector-tag,
+    .hljs-doctag,
+    .hljs-name {
+        color: $blue;
+    }
+
+    .hljs-built_in,
+    .hljs-literal,
+    .hljs-bullet,
+    .hljs-code,
+    .hljs-addition {
+        color: $orange;
+    }
+
+    .hljs-regexp,
+    .hljs-symbol,
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-link,
+    .hljs-selector-attr,
+    .hljs-selector-pseudo {
+        color: $blue;
+    }
+
+    .hljs-type,
+    .hljs-string,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-quote,
+    .hljs-template-tag,
+    .hljs-deletion {
+        color: $indigo;
+    }
+
+    .hljs-title,
+    .hljs-section {
+        color: $red;
+        font-weight: bold;
+    }
+
+    .hljs-comment {
+        color: $gray-600;
+    }
+
+    .hljs-meta-keyword {
+        color: $green;
+    }
+
+    .hljs-meta {
+        color: $green;
+        color: $gray-600;
+    }
+
+    .hljs-emphasis {
+        font-style: italic;
+    }
+
+    .hljs-strong {
+        font-weight: bold;
+    }
+
+    .hljs-function {
+        color: $green;
+    }
+
+    .hljs-number {
+        color: $purple;  
+    }
+}
+
